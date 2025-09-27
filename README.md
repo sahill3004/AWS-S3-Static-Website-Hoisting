@@ -75,3 +75,18 @@ You can now access your website using the **Bucket website endpoint** provided i
 3.  You should see your static website loaded. The screenshot shows the "NEW ICE-CREAM BRAND - V2" website successfully hosted.
 
 ![Step 1 - Create Bucket](/images/host%20website.png)
+
+---
+
+### Step 6: Enable Versioning
+
+Enabling versioning on your S3 bucket allows you to keep multiple versions of your files. This is very useful if you need to revert to an older version of your website.
+
+1.  Go to the Properties tab of your S3 bucket.
+2.  Scroll down to Bucket Versioning and click Edit.
+3.  Select Enable.
+![Step 1 - Create Bucket](/images/Enable%20versioning.png)
+4.  Click Save changes.
+![Step 1 - Create Bucket](/images/show%20versioning.png)
+
+Now, whenever you upload a file with the same name as an existing file, S3 will keep the previous version. You can restore older versions if needed.
